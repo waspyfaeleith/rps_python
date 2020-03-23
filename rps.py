@@ -1,14 +1,4 @@
 import random
-# from random import seed
-# from random import randint
-
-# seed(1)
-
-# for _ in range(3):
-#     value = randint(0, 3)
-#     print(value)
-
-
 
 def get_user_choice():
     print("Make your choice - (R)ock, (P)aper, or (S)cissors")
@@ -30,7 +20,7 @@ def get_choice(choice):
 def is_valid(choice):
     if choice == 'r' or choice == 'p' or choice == 's':
         return True
-    else: 
+    else:
         return False
 
 def get_winner(player_1_choice, player_2_choice):
@@ -45,7 +35,7 @@ def get_winner(player_1_choice, player_2_choice):
         return player_1_choice
     else:
         return player_2_choice
-    
+
 
 
 print ("Let's play 'Rock, Paper, Scissors")
@@ -67,4 +57,3 @@ if (winner == None):
     print("It's a Draw!")
 else:
     print(winner + " wins!")
-
